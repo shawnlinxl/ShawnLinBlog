@@ -28,8 +28,9 @@ Saving contents to buffers is easy. There are two things you can do: initialize 
 
 First, you’ll need to press {% kbd &quot %}. This tells vim to start identifying a buffer. Then, press any preferred letter in a-z (**lower case!**), followed by your yank/delete actions. The content is saved into the buffer named by the letter you’ve just chosen. If you already saved something in a buffer and wish to append to it, the shortcut is the same, except you use the **upper** case letter. To summarize:
 
-* {% kbd &quot %}{% kbd a %}{% kbd y %}: yank and save to buffer a
-* {% kbd &quot %}{% kbd A %}{% kbd y %}: yank and append to buffer a
+> {% kbd &quot %}{% kbd a %}{% kbd y %}: yank and save to buffer a
+
+> {% kbd &quot %}{% kbd A %}{% kbd y %}: yank and append to buffer a
 
 # Retrieving from named buffers
 
