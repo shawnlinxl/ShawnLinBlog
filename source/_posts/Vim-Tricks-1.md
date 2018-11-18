@@ -91,3 +91,7 @@ If you don’t know, Ex is a direct predecessor of vim. You can use Ex commands 
 * `:w` save
 * `:q` quit
 * `:wq` save and quit
+
+# Reference
+
+1. Arnold Robbins, Linda Lamb, and Elbert Hannah. 2008. Learning the Vi and Vim Editors (Seventh ed.). O’Reilly.

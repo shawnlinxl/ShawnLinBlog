@@ -43,9 +43,9 @@ Even on the same screen, moving cursor effeciently will be useful. We’ve alrea
 
 ## By content
 
-{% kbd ( %} or {% kbd ) %} beginning of current/next sentence (.?! marks the end of an sentence)
-{% kbd { %} or {% kbd } %} beginning of current/next paragraph (empty line)
-{% kbd [[ %} or {% kbd ]] %} beginning of current/next section
+* {% kbd ( %} or {% kbd ) %} beginning of current/next sentence (.?! marks the end of an sentence)
+* {% kbd { %} or {% kbd } %} beginning of current/next paragraph (empty line)
+* {% kbd [[ %} or {% kbd ]] %} beginning of current/next section
 
 # Searching
 
@@ -53,3 +53,7 @@ Searching a document is perhaps the most common task one performs day to day. Se
 
 * {% kbd / %} or {% kbd ? %} initialize searchs. / does the search forwards, and ? does it backwards. For example, if I want to search the next occurance of “to”, I would type “/ to” and press enter. To find the previous one, I need to type in “? to”.
 * {% kbd N %} or {% kbd n %} handles multiple occurances. It repeats the last search in opposite/same direction.
+
+# Reference
+
+1. Arnold Robbins, Linda Lamb, and Elbert Hannah. 2008. Learning the Vi and Vim Editors (Seventh ed.). O’Reilly.
