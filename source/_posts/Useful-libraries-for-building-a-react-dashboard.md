@@ -34,3 +34,6 @@ npm install --save react-bootstrap-table-next
 ```sh
 npm install --save react-datepicker
 ```
+
+**Alternatives:**
+[React Dates (Airbnb)](https://github.com/airbnb/react-dates)
