@@ -1,7 +1,7 @@
 ---
 title: Useful libraries for building a react dashboard
 date: 2018-11-18 21:31:20
-tags: react notes
+tags: [react, notes]
 ---
 
 # UI Framework
