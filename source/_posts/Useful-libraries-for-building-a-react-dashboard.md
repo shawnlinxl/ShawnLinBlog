@@ -14,6 +14,15 @@ tags: [react, notes]
 ```sh
 npm install --save semantic-ui-react semantic-ui-css
 ```
+#### Alternatives
+
+[Material UI](https://material-ui.com/)  (Google)
+[React Bootstrap](https://react-bootstrap.github.io/)
+[Ant Design](https://ant.design/) (Alibaba)
+[Fabric](https://developer.microsoft.com/en-us/fabric) (Microsoft)
+[Altas Kit](https://atlaskit.atlassian.com/) (Atlassian)
+[React Toolbox](http://react-toolbox.io)
+[Blueprint](https://blueprintjs.com/)
 
 # Tables
 
@@ -35,5 +44,22 @@ npm install --save react-bootstrap-table-next
 npm install --save react-datepicker
 ```
 
-**Alternatives:**
+#### Alternatives
+
 [React Dates (Airbnb)](https://github.com/airbnb/react-dates)
+
+# Date Converstion
+
+[Moment.js](https://momentjs.com/) is pretty much the go-to library for any date time conversion in javascirpt.
+
+```sh
+npm install --save moment
+```
+
+# Select menu
+
+[React Select](https://react-select.com/home)
+
+```sh
+npm install --save react-select
+```
