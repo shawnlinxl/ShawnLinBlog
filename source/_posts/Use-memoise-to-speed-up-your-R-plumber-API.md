@@ -11,7 +11,7 @@ If a function is called multiple times with the same input, you can often speed 
 Because API calls are often repeated, performance of `plumber` can be greatly improved by caching its result. Here's a simple example:
 
 
-##### API Script
+#### API Script
 
 `add_api.R`
 
@@ -49,12 +49,13 @@ function(a, b){
 }
 ```
 
-##### Start API server
+#### Start API server
+
 ```r
 plumber::plumb(file = "add_api.R")$run(port=50000)
 ```
 
-##### Speed comparison
+#### Speed comparison
 
 We can use the following script to test the speed difference of with and without memoise.
 
