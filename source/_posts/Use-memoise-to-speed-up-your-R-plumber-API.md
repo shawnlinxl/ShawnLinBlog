@@ -37,7 +37,7 @@ add_mem <- memoise(add)
 #* @param a The first number to add
 #* @param b The second number to add
 #* @get /add
-function(a, b){
+function(a, b) {
   add(as.numeric(a), as.numeric(b))
 }
 
@@ -45,7 +45,7 @@ function(a, b){
 #* @param a The first number to add
 #* @param b The second number to add
 #* @get /addWithMemoise
-function(a, b){
+function(a, b) {
   add_mem(as.numeric(a), as.numeric(b))
 }
 ```
@@ -64,7 +64,7 @@ We can use the following script to test the speed difference of with and without
 # With memoise
 for (i in 1:5) {
   cat(
-    paste0("Time elapsed in request #", i, " with memoise:"),
+    paste0("Time elapsed in request ", i, " with memoise:"),
     httr::GET("http://localhost:50000/addWithMemoise?a=1&b=1")$times["total"],
     "\n"
   )
@@ -73,7 +73,7 @@ for (i in 1:5) {
 # Without memoise
 for (i in 1:5) {
   cat(
-    paste0("Time elapsed in request #", i, " without memoise:"),
+    paste0("Time elapsed in request ", i, " without memoise:"),
     httr::GET("http://localhost:50000/add?a=1&b=1")$times["total"],
     "\n"
   )
@@ -87,15 +87,15 @@ As shown below, when using the API call that's using memoise, only in the first 
 The API call without memoise waited 1 second for all the requests before returning the result.
 
 ```sh
-Time elapsed in request #1 with memoise: 1.012968 
-Time elapsed in request #2 with memoise: 0.069301 
-Time elapsed in request #3 with memoise: 0.004383 
-Time elapsed in request #4 with memoise: 0.00457 
-Time elapsed in request #5 with memoise: 0.013691 
+Time elapsed in request 1 with memoise: 1.012968 
+Time elapsed in request 2 with memoise: 0.069301 
+Time elapsed in request 3 with memoise: 0.004383 
+Time elapsed in request 4 with memoise: 0.00457 
+Time elapsed in request 5 with memoise: 0.013691 
 
-Time elapsed in request #1 without memoise: 1.024764 
-Time elapsed in request #2 without memoise: 1.04967 
-Time elapsed in request #3 without memoise: 1.019524 
-Time elapsed in request #4 without memoise: 1.008734 
-Time elapsed in request #5 without memoise: 1.011595 
+Time elapsed in request 1 without memoise: 1.024764 
+Time elapsed in request 2 without memoise: 1.04967 
+Time elapsed in request 3 without memoise: 1.019524 
+Time elapsed in request 4 without memoise: 1.008734 
+Time elapsed in request 5 without memoise: 1.011595 
 ```
