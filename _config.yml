@@ -40,8 +40,8 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
+  enable: false
+  line_number: false
   auto_detect: false
   tab_replace:
   
@@ -81,3 +81,19 @@ theme: vexo
 deploy:
   type:
 
+# RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content: true
+  content_limit:
+  content_limit_delim: ' '
+  order_by: -date
+
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'okaidia'
+  line_number: false    # default false
+  custom_css:    # optional

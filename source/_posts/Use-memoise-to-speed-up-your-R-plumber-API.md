@@ -18,13 +18,14 @@ Because API calls are often repeated, performance of `plumber` can be greatly im
 ```r
 library(memoise)
 
-
 # Define function ---------------------------------------------------------
 add <- function(a, b) {
-  # Wait 1 second
+  # This step will show us the difference of memoised function and a normal
+  # function. In the memoised function, because results are cached, the 1
+  # second wait will be skipped
   Sys.sleep(1)
   
-  return(a + b)
+  a + b
 }
 
 # Memoisize function ------------------------------------------------------
