@@ -92,6 +92,14 @@ feed:
   content_limit_delim: ' '
   order_by: -date
 
+tagFeed:
+  type: atom
+  path:
+    pre: tag
+    post: atom.xml
+  limit: 20
+  hub:
+
 prism_plugin:
   mode: 'preprocess'    # realtime/preprocess
   theme: 'okaidia'
