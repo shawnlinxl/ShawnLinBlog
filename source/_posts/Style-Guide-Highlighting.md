@@ -8,6 +8,6 @@ tags: principles
 
 #### Colors and Meanings
 
-* yellow: any points that are not conclusions but worth noting
-* red: danger, what not to do
-* green: conclusion
+* <span style="background-color: #feff6e">yellow: any point that is not a conclusion but worth noting</span>
+* <span style="background-color: #f25656">red: danger, what not to do</span>
+* <span style="background-color: #43c943">green: conclusion</span>
