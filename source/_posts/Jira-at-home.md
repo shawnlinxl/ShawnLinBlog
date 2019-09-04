@@ -130,7 +130,7 @@ With your binary ready and database set up, we are ready to install Jira. A deta
 ```sh
 cd ~
 chmod a+x atlassian-jira-software-8.3.3-x64.bin
-$ sudo ./atlassian-jira-software-8.3.3-x64.bin
+sudo ./atlassian-jira-software-8.3.3-x64.bin
 ```
 
 Swap `8.3.3` with the Jira version you have in hand.
