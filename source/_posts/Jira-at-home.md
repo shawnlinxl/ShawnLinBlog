@@ -47,7 +47,7 @@ username@jira:~$ ip a
 In here, `192.168.0.123` is your ip, and you'll be able to ssh to the server by starting a terminal window on your local (non-vm) computer and type
 
 ```sh
-ssh [username]@192.168.0.123`
+ssh [username]@192.168.0.123
 ```
 
 You'll need to substitute `[username]` with your actual username on the server, and it will prompt for your password.
