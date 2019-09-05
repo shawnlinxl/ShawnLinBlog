@@ -189,6 +189,15 @@ Open the Jira App, enter the link we've produced above, and you should be able t
 
 <img alt="Link Jira Site to App" src="/images/jira-link-site.PNG" width="300px"/>
 
+## Start and stop Jira service
+
+To start and stop Jira service:
+
+```sh
+sudo /etc/init.d/jira stop
+sudo /etc/init.d/jira start
+```
+
 ## Setup HTTPS
 
 Having a trusted and encrypted connection is important for your privacy and security. This is also a prerequisite for using the Slack plugin for Jira. To be able to do this, you'll need a URL.
