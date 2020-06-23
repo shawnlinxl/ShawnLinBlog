@@ -124,7 +124,7 @@ How can I make use of this? A docker container is like any other remote machine,
 
 ### Minimal Example
 
-[Here](https://github.com/shawnlinxl/pyback/tree/36218b11d3caecc468575bc90e97b9c2090c476e), I've created a minimal example. This assumes you are on a Mac (Linux should work too). 
+[Here](https://github.com/shawnlinxl/pyback/tree/738c5298c6bd4d0db2f6a0c81922b942ae0702d7), I've created a minimal example. This assumes you are on a Mac (Linux should work too). 
 
 In the root directory, I've supplied a dockerfile, which pull's from Python's official docker image, and install pytest as a dev package via pipenv.
 
