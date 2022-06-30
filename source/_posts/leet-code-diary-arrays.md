@@ -20,7 +20,7 @@ This type of questions can appear as simply asking you to find a missing or dupl
 - binary search
 - math
 
-## [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
+### [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 
 Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
@@ -33,7 +33,7 @@ Output: true
 - sort, then compare element-wise. Time O(nlogn), Space O(1)
 - hashtable, loop through elements and add to set. Check if element is already in the set. Time O(n), Space O(n).
 
-## [268. Missing Number](https://leetcode.com/problems/missing-number/) :
+### [268. Missing Number](https://leetcode.com/problems/missing-number/) :
 
 Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
 
@@ -47,7 +47,7 @@ Output: 2
 - convert array to hashtable, then loop through all possible values to see which is missing from set. Time O(n), Space O(n)
 - math: sum of possible values - sum of array values. Time O(n), Space O(1)
 
-## [448. Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)
+### [448. Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)
 
 Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
 
@@ -66,7 +66,7 @@ Output: [5,6]
 
   Time O(n), Space O(1)
 
-## [136. Single Number](https://leetcode.com/problems/single-number/)
+### [136. Single Number](https://leetcode.com/problems/single-number/)
 
 Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
 
@@ -81,7 +81,7 @@ Output: 1
 - sort, then compare with left and right elements. If both are not equal, then this element only appeared once. Time O(nlogn), Space O(1)
 - math: 2 \* set(nums) - nums. Time O(n), Space O(1)
 
-## [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
+### [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
 
 Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.
 
@@ -118,7 +118,7 @@ Output: 2
 
 - Floyd's Tortoise and Hare to come back
 
-## [442. Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)
+### [442. Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)
 
 Given an integer array nums of length n where all the integers of nums are in the range [1, n] and each integer appears once or twice, return an array of all the integers that appears twice.
 
@@ -133,7 +133,7 @@ Output: [2,3]
 - hastable, store seen elements in a map. Time O(n) Space
 - flip signs in place: first time seen value = x, flip nums[x] negative. if then need to flip again, means this number is repeated and add that to return list
 
-## [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
+### [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 
 ```
 Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
@@ -144,7 +144,7 @@ You must write an algorithm that runs in O(n) time.
 - sort, and then compare neighbors to check for consecutive sequence. Time O(nlogn), Space O(1)
 - use hashtable: create hashtable, use condition num - 1 is not in hashtable to establish the start of the sequence, then increment until num + 1 is no longer in hashtable. Time O(n), Space O(n)
 
-## [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
+### [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
 
 Given an unsorted integer array nums, return the smallest missing positive integer.
 
@@ -165,7 +165,7 @@ Output: 2
 
 Spatial Operations includes dealing with 2D matrices: rotation, value manipulation, reading matrices in specific orders, and others.
 
-## [2022. Convert 1D Array Into 2D Array](https://leetcode.com/problems/convert-1d-array-into-2d-array/)
+### [2022. Convert 1D Array Into 2D Array](https://leetcode.com/problems/convert-1d-array-into-2d-array/)
 
 You are given a 0-indexed 1-dimensional (1D) integer array original, and two integers, m and n. You are tasked with creating a 2-dimensional (2D) array with m rows and n columns using all the elements from original.
 
@@ -181,7 +181,7 @@ Output: [[1,2],[3,4]]
 - Python: Slicing. Key is to understand the start and end index for each 2D row in the 1D array. Start will be row_idx in, end will be row_idx in + n.
   `return [ original[i*n:(i+1)*n] for i in range(m) ] if len(original) == m*n else []`
 
-## [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
+### [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
 
 Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0's.
 
@@ -197,7 +197,7 @@ Output: [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
 - Instead of using two vectors, we can use the first column and first row inplace to keep track of which row/column to set to 0. Space O(1).
   Important to note, the first cell mat[0][0] is shared by the first column and first row. Therefore, we should mandate this cell to either only control zero'ing out the first row, or the first column, but not both. If we choose this to zero out the first row, then we will use one additional space for recording whether to zero out the first column.
 
-## [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
+### [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
 
 Given an m x n matrix, return all elements of the matrix in spiral order.
 
@@ -216,7 +216,7 @@ Output: [1,2,3,6,9,8,7,4,5]
     - Update boundary for left, right, up, down. If we choose this method, then we need to make sure after traversing right and down, we end up on a different row for traversing left and on a different column for traversing up.
     - Mark visited cells
 
-## [48. Rotate Image](https://leetcode.com/problems/rotate-image/)
+### [48. Rotate Image](https://leetcode.com/problems/rotate-image/)
 
 You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
 
@@ -236,7 +236,7 @@ def rotate(self, matrix: List[List[int]]) -> None:
 
 ## Others
 
-## [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
+### [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
 
 Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
 
