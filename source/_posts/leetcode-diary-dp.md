@@ -33,6 +33,64 @@ Output: 6
 - we don't have to keep a record of all dp[i]'s. We just need the current rolling sum.
 - Time O(n), Space O(1)
 
+### [152. Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
+
+Given an integer array nums, find a contiguous non-empty subarray within the array that has the largest product, and return the product.
+
+```
+Input: nums = [2,3,-2,4]
+Output: 6
+```
+
+https://leetcode.com/problems/longest-increasing-subsequence/discuss/74824/JavaPython-Binary-search-O(nlogn)-time-with-explanation/206357
+
+### [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
+
+Given an integer array nums, return the length of the longest strictly increasing subsequence.
+
+A subsequence is a sequence that can be derived from an array by deleting some or no elements without changing the order of the remaining elements. For example, [3,6,2,7] is a subsequence of the array [0,3,1,6,2,2,7].
+
+- Defining the "states" of DP is very important for this question
+  - if we define as length of longest sequence of subarrays, it is hard to solve
+  - instead, we should define as longest sequence of subarrays that include the "last" entry, then it's easy to solve
+
+### [198. House Robber](https://leetcode.com/problems/house-robber/)
+
+You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
+
+Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.
+
+```
+Input: nums = [1,2,3,1]
+Output: 4
+```
+
+- Recognize that max_profit(n) = max(max_profit(n-2)+profit(n), max_profit(n-1))
+
+### [213. House Robber II](https://leetcode.com/problems/house-robber-ii/)
+
+You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have a security system connected, and it will automatically contact the police if two adjacent houses were broken into on the same night.
+
+- Similar to previous question. Note that first and last house cannot be robbed together. So break the series down to
+
+  - 0..n-1
+  - 1..n
+
+  and compute two standard house robber problems, then take their max.
+
+### [322. Coin Change](https://leetcode.com/problems/coin-change)
+
+You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money.
+
+Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+
+You may assume that you have an infinite number of each kind of coin.
+
+```
+Input: coins = [1,2,5], amount = 11
+Output: 3
+```
+
 ## Distinct Ways
 
 Given a target, find a number of distinct ways to reach the target.
