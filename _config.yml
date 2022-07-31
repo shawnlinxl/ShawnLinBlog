@@ -129,3 +129,16 @@ prism_plugin:
   theme: "vs"
   line_number: false # default false
   custom_css: # optional
+
+math:
+  katex:
+    css: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+    options:
+      throwOnError: false
+  mathjax:
+    css: "https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css"
+    options:
+      conversion:
+        display: false
+      tex:
+      svg:

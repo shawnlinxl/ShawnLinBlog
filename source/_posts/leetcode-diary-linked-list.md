@@ -1,7 +1,9 @@
 ---
 title: Leetcode Diary - Linked List Templates
 date: 2022-07-20 22:04:55
-tags: leetcode
+tags:
+  - leetcode
+  - interview
 ---
 
 # Linked List Templates

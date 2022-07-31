@@ -1,7 +1,9 @@
 ---
 title: Leetcode Diary - Arrays
 date: 2022-06-29 10:51:10
-tags: leetcode
+tags:
+  - leetcode
+  - interview
 ---
 
 # Arrays

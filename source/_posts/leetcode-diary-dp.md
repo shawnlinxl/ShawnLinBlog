@@ -1,7 +1,9 @@
 ---
 title: Leetcode Diary - Dynamic Programming
 date: 2022-06-29 15:22:23
-tags: leetcode
+tags:
+  - leetcode
+  - interview
 ---
 
 # Dynamic Programming
